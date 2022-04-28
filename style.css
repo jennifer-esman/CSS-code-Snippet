@@ -1,0 +1,113 @@
+* {
+    background: darkslategrey;
+    margin: 5px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+section h3 {
+    display: flex;
+    justify-content: center;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    background-color: var(--card-background);
+    display: flex;
+}
+
+:root {
+    --primary: rgb(36, 35, 34);
+    --secondary: rgba(75, 15, 189, 0.8);
+    --card-background: linear-gradient(to bottom right, purple, blue);
+}
+
+.card-background {
+    background-color: var(--card-background);
+}
+
+.card {
+    max-width: 50%;
+    background-color: var(--secondary);
+    margin: 10px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    border-style: dashed;
+    border-color: black;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 10px;
+    gap: 10px 10px;
+}
+
+.card-title {
+    color: var(--secondary);
+    position: relative;
+    justify-content:center;
+    top: -30px;
+    display: flex;
+    font-size: 200%;
+    border-style: solid;
+    border-color: black;
+}
+
+.card-subtitle {
+    display: flex;
+    justify-content: center;
+    color: var(--secondary);
+    font-weight: 900;
+}
+
+.card-content {
+    display: flex;
+    justify-content: center;
+    max-width: 25%;
+    background-color: var(--secondary);
+}
+
+.card:hover {
+    transition: 0.5s;
+    box-shadow:0 5px 15px rgba(145, 92, 182, .4);
+}
+
+
+@media screen and (min-width:992px) {
+    .card {
+        width: 25%;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .card {
+        width: 33%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .card {
+        width: 100%;
+    }
+}
